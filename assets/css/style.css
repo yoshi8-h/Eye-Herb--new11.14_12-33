@@ -224,6 +224,67 @@ a {
 	background: url(../images/common/fv_bg.webp) no-repeat center center/cover;
 	height: 100vh;
 	max-height: 75rem;
+	position: relative;
+}
+
+.fv__inner {
+	height: 100%;
+}
+
+.fv__wrap {
+	height: 100%;
+	position: relative;
+}
+
+.fv__texts {
+	leading-trim: both;
+	text-edge: cap;
+	align-items: flex-start;
+	color: #FFF;
+	display: flex;
+	flex-direction: row-reverse;
+	font-family: "Zen Old Mincho", serif;
+	font-size: 1.9869375rem;
+	font-weight: 700;
+	gap: 2.5rem;
+	justify-content: center;
+	left: calc(50% - min(48vw, 27.04rem));
+	line-height: 1.1;
+	position: absolute;
+	top: 50%;
+	transform: translateY(calc(-50% + 0.625rem));
+}
+
+.fv__text01 {
+	padding: 0.625rem; /* テキストの周囲に余白を設定 */
+	text-orientation: upright; /* 日本語や漢字をそのままの形で表示 */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* テキストに影を付ける */
+	width: 2.625rem; /* 横幅を適切に設定 */
+	writing-mode: vertical-rl; /* 縦書きに変更 */
+}
+
+.fv__text02 {
+	margin-top: 6.25rem;
+	padding: 0.625rem; /* テキストの周囲に余白を設定 */
+	text-orientation: upright; /* 日本語や漢字をそのままの形で表示 */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* テキストに影を付ける */
+	width: 1.875rem; /* 横幅を適切に設定 */
+	writing-mode: vertical-rl; /* 縦書きに変更 */
+}
+
+.fv__logo {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, calc(-50% + 2.5625rem));
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.fv__logo img {
+	aspect-ratio: 255/258;
+	height: 16.125rem;
+	width: 15.9375rem;
 }
 
 .is-fixed {

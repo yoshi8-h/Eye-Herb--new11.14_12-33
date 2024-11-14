@@ -11,6 +11,7 @@
           </div>
         </div>
       </div>
+      <div class="fv__logo"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fv-logo.webp" alt="Eye Herb"></div>
     </div>
 
   </main>
