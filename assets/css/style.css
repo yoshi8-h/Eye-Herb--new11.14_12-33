@@ -236,6 +236,8 @@ a {
 	position: fixed;
 	right: 0;
 	top: 0;
+	transition: transform 0.3s;
+	transition: transform 0.3s;
 	z-index: 500;
 }
 
@@ -331,6 +333,12 @@ a {
 	width: 2rem;
 }
 
+/* スクロールした時に『header2』を表示するためのクラス名(JSで制御) */
+
+.header--hidden {
+	transform: translateY(-100%);
+}
+
 .is-fixed {
 	overflow: hidden;
 }
@@ -339,13 +347,14 @@ a {
 	-webkit-backdrop-filter: blur(7px);
 	backdrop-filter: blur(7px);
 	background: rgba(255, 255, 255, 0.64);
-	display: none;
 	left: 0;
 	padding-bottom: 1.25rem;
 	padding-top: 1.25rem;
 	position: fixed;
 	right: 0;
 	top: 0;
+	transform: translateY(-100%); /* 上からスライドインするための初期位置 */
+	transition: transform 0.3s ease; /* スムーズなスライドイン */
 	z-index: 500;
 }
 
@@ -443,6 +452,10 @@ a {
 	max-width: 11rem;
 }
 
+.header2--visible {
+	transform: translateY(0); /* スライドインして表示 */
+}
+
 .info__address {
 	leading-trim: both;
 	text-edge: cap;
@@ -513,8 +526,35 @@ a {
 
 @media screen and (max-width: 1200px) {
 
+.btn-reserve01 {
+	padding-bottom: 0.9375rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding-top: 0.9375rem;
+}
+
+.btn-reserve01__wrap {
+	gap: 0.625rem;
+}
+
+.btn-reserve01__icon {
+	width: 1rem;
+}
+
+.btn-reserve01__icon svg {
+	width: 0.875rem;
+}
+
 .header__title-br {
 	display: inline-block;
+}
+
+.header2__right {
+	gap: 2.375rem;
+}
+
+.header2__nav {
+	gap: 2.1875rem;
 }
 
 }
