@@ -11,20 +11,24 @@
   <!-- header (ページ先頭時に表示) -->
   <header class="header">
     <div class="header__inner">
-      <h1 class="header__title">
-        <a href="<?php echo esc_url(home_url('/')); ?>" class="header__title-link">代官山に佇む癒しのプライベートサロン【 Eye Herb 】</a>
-      </h1>
-      <nav class="header__nav">
-        <a href="<?php echo esc_url(get_permalink(get_page_by_path('about'))); ?>" class="header__link">About Eye Herb</a>
-        <a href="<?php echo esc_url(get_permalink(get_page_by_path('menu'))); ?>" class="header__link">Menu</a>
-        <a href="<?php echo esc_url(get_permalink(get_page_by_path('before-after'))); ?>" class="header__link">Before/After</a>
-        <a href="<?php echo esc_url(get_permalink(get_page_by_path('recruit'))); ?>" class="header__link">Recruit</a>
-        <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="header__link">Contact</a>
-      </nav>
+      <div class="header__wrap-pc">
+        <h1 class="header__title">
+          <a href="<?php echo esc_url(home_url('/')); ?>" class="header__title-link">代官山に佇む癒しのプライベートサロン<br class="header__title-br">【 Eye Herb 】</a>
+        </h1>
+        <nav class="header__nav">
+          <a href="<?php echo esc_url(get_permalink(get_page_by_path('about'))); ?>" class="header__link">About Eye Herb</a>
+          <a href="<?php echo esc_url(get_permalink(get_page_by_path('menu'))); ?>" class="header__link">Menu</a>
+          <a href="<?php echo esc_url(get_permalink(get_page_by_path('before-after'))); ?>" class="header__link">Before/After</a>
+          <a href="<?php echo esc_url(get_permalink(get_page_by_path('recruit'))); ?>" class="header__link">Recruit</a>
+          <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="header__link">Contact</a>
+        </nav>
+      </div>
       <button class="header__btn js-header__btn">
-        <span class="header__bar"></span>
-        <span class="header__bar"></span>
-        <span class="header__bar"></span>
+        <div class="header__btn-wrap">
+          <span class="header__bar"></span>
+          <span class="header__bar"></span>
+          <span class="header__bar"></span>
+        </div>
       </button>
     </div>
   </header>
