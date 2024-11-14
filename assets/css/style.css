@@ -216,6 +216,10 @@ a {
 	display: none;
 }
 
+.drawer-menu.is-clicked {
+	transform: translateY(0);
+}
+
 .fv {
 	background: url(../images/common/fv_bg.webp) no-repeat center center/cover;
 	height: 100vh;
@@ -439,6 +443,24 @@ a {
 	max-width: 11rem;
 }
 
+.info__address {
+	leading-trim: both;
+	text-edge: cap;
+	color: #FFF;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.info__tel {
+	leading-trim: both;
+	text-edge: cap;
+	color: #FFF;
+	font-size: 1rem;
+	font-style: normal;
+	margin-left: -0.625rem;
+}
+
 .inner {
 	margin-left: auto;
 	margin-right: auto;
@@ -446,6 +468,47 @@ a {
 	padding-left: 30px;
 	padding-right: 30px;
 	width: 100%;
+}
+
+.nav {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.nav__item {
+	leading-trim: both;
+	text-edge: cap;
+	border-bottom: 1px solid #7B695A;
+	color: #FFF;
+	display: block;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	text-indent: 0.04em;
+	text-transform: capitalize;
+	width: 100%;
+}
+
+.nav__item:last-of-type {
+	border-bottom: none;
+}
+
+.sns-wrap {
+	align-items: center;
+	display: flex;
+	gap: 2.5rem;
+	justify-content: flex-start;
+}
+
+.title01 {
+	display: block;
 }
 
 @media screen and (max-width: 1200px) {
@@ -484,12 +547,35 @@ html {
 	height: 100%;
 	left: 0;
 	overflow: scroll;
+	padding-bottom: 2.8125rem;
+	padding-top: 1.51rem;
 	position: fixed;
 	right: 0;
 	top: 0;
-	transition: transform 0.25s ease-out;
+	transform: translateY(-200%);
+	transition: transform 0.4s linear;
 	width: 100%;
 	z-index: 400;
+}
+
+.drawer-menu__inner {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 24.5625rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.drawer-menu__nav {
+	margin-top: 0.540625rem;
+}
+
+.drawer-menu__bottom {
+	margin-top: 0.53125rem;
+}
+
+.drawer-menu__sns-wrap {
+	margin-top: 1.5625rem;
 }
 
 .header {
@@ -570,6 +656,37 @@ html {
 .inner {
 	padding-left: 24.5px;
 	padding-right: 24.5px;
+}
+
+.sns-wrap__insta img {
+	aspect-ratio: 1/1;
+	height: 3rem;
+	max-width: 3rem;
+}
+
+.sns-wrap__line img {
+	aspect-ratio: 1/1;
+	height: 3rem;
+	max-width: 3rem;
+}
+
+.title01__text {
+	leading-trim: both;
+	text-edge: cap;
+	color: #FFF;
+	font-family: "Zen Old Mincho", serif;
+	font-size: 0.75rem;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.title01__img {
+	margin-top: 1rem;
+}
+
+.title01__img img {
+	aspect-ratio: 204.185/63.691;
+	width: 12.7615625rem;
 }
 
 }

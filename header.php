@@ -77,10 +77,10 @@
   <div class="drawer-menu js-drawer-menu">
     <div class="drawer-menu__inner">
       <div class="drawer-menu__wrap">
-        <div class="drawer-menu__top title01">
+        <a class="drawer-menu__top title01">
           <p class="title01__text">代官山に佇む癒しのプライベートサロン</p>
           <div class="title01__img"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/title01-img-sp.webp" alt="Eye Herb"></div>
-        </div>
+        </a>
         <div class="drawer-menu__nav nav">
           <a href="<?php echo esc_url(get_permalink(get_page_by_path('about'))); ?>" class="nav__item">About Eye Herb</a>
           <a href="<?php echo esc_url(get_permalink(get_page_by_path('menu'))); ?>" class="nav__item">Menu</a>
