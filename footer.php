@@ -3,12 +3,11 @@
     <div class="footer__inner inner">
       <div class="footer__wrap">
         <div class="footer__top">
-          <a class="footer__title title01 title01--footer">
+          <a href="<?php echo esc_url(home_url('/')); ?>" class="footer__title title01 title01--footer">
             <p class="title01__text">代官山に佇む癒しのプライベートサロン</p>
-            <!-- <div class="title01__img"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/title01-img-sp.webp" alt="Eye Herb"></div> -->
             <picture class="title01__picture">
               <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/title01-img-pc.webp">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/title01-img-sp.webp" alt="Eye Herb">
+              <img class="title01__img" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/title01-img-sp.webp" alt="Eye Herb">
             </picture>
           </a>
           <div class="footer__info info info--footer">
@@ -16,7 +15,7 @@
             <address class="info__address">東京都渋谷区代官山町2-5 コレタス代官山4F</address>
             <div class="info__tel">【TEL】03-6416-4229 (12:00 - 19:00)</div>
           </div>
-          <div class="footer__sns-sp sns-wrap">
+          <div class="footer__sns-sp sns-wrap sns-wrap--footer-sp">
             <a href="" class="sns-wrap__insta"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/instagram-icon.webp" alt="instagram"></a>
             <a href="" class="sns-wrap__line"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/line-icon.webp" alt="LINE"></a>
           </div>
@@ -39,7 +38,7 @@
             <small class="footer__copyright">Copyright © 2024 Eye Herb Beauty Salon</small>
           </div>
           <div class="footer__bottom-right">
-            <div class="footer__sns-pc sns-wrap">
+            <div class="footer__sns-pc sns-wrap sns-wrap--footer-pc">
               <a href="" class="sns-wrap__insta"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/instagram-icon.webp" alt="instagram"></a>
               <a href="" class="sns-wrap__line"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/line-icon.webp" alt="LINE"></a>
             </div>
