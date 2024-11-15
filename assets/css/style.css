@@ -1074,7 +1074,7 @@ html {
 .fv__texts {
 	font-size: 1.1054375rem;
 	gap: 1.375rem;
-	left: calc(50% - min(48vw, 9.75rem));
+	left: calc(50% - min(37.5vw, 40rem));
 	top: 3.25rem;
 	transform: translateY(0);
 }
@@ -1095,13 +1095,14 @@ html {
 .fv__logo img {
 	aspect-ratio: 213/209;
 	height: 13.0625rem;
+	min-width: 13.3125rem;
 	width: 13.3125rem;
 }
 
 .fv__reserve-circle {
 	bottom: 1rem;
 	max-width: 6.5rem;
-	right: calc(50% - min(48vw, 11.28rem));
+	right: calc(50% - min(45vw, 38rem));
 }
 
 .header {
@@ -1233,6 +1234,12 @@ html {
 
 .nav--footer .nav__item::after {
 	display: none;
+}
+
+.reserve-circle {
+	bottom: 3.541875rem;
+	position: fixed;
+	right: calc(50% - min(48vw, 40rem));
 }
 
 .reserve-circle__brown {
