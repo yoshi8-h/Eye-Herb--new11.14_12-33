@@ -223,7 +223,7 @@ a {
 .fv {
 	background: url(../images/common/fv_bg.webp) no-repeat center center/cover;
 	height: 100vh;
-	max-height: 75rem;
+	max-height: 56rem;
 	position: relative;
 }
 
@@ -246,28 +246,27 @@ a {
 	font-family: "Zen Old Mincho", serif;
 	font-size: 1.9869375rem;
 	font-weight: 700;
-	gap: 2.5rem;
+	gap: 1.25rem;
 	justify-content: center;
 	left: calc(50% - min(48vw, 27.04rem));
 	line-height: 1.1;
 	position: absolute;
 	top: 50%;
-	transform: translateY(calc(-50% + 0.625rem));
+	transform: translateY(calc(-50% + 2.5rem));
 }
 
 .fv__text01 {
-	padding: 0.625rem; /* テキストの周囲に余白を設定 */
 	text-orientation: upright; /* 日本語や漢字をそのままの形で表示 */
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* テキストに影を付ける */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* テキストに影を付ける */
 	width: 2.625rem; /* 横幅を適切に設定 */
 	writing-mode: vertical-rl; /* 縦書きに変更 */
 }
 
 .fv__text02 {
-	margin-top: 6.25rem;
+	margin-top: 5rem;
 	padding: 0.625rem; /* テキストの周囲に余白を設定 */
 	text-orientation: upright; /* 日本語や漢字をそのままの形で表示 */
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* テキストに影を付ける */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* テキストに影を付ける */
 	width: 1.875rem; /* 横幅を適切に設定 */
 	writing-mode: vertical-rl; /* 縦書きに変更 */
 }
@@ -285,6 +284,20 @@ a {
 	aspect-ratio: 255/258;
 	height: 16.125rem;
 	width: 15.9375rem;
+}
+
+.fv__reserve-circle {
+	bottom: 3.541875rem;
+	max-width: 13.354375rem;
+	position: absolute;
+	right: calc(50% - min(48vw, 40rem));
+	width: 100%;
+}
+
+.fv__scroll-bar {
+	bottom: 0;
+	left: calc(50% - min(48vw, 36.5rem));
+	position: absolute;
 }
 
 .is-fixed {
@@ -574,6 +587,138 @@ a {
 	border-bottom: none;
 }
 
+.reserve-circle {
+	aspect-ratio: 1/1;
+	background: rgba(255, 255, 255, 0.2);
+	border: 1px solid #FFF;
+	border-radius: 50%;
+	display: block;
+}
+
+.reserve-circle__brown {
+	align-items: center;
+	aspect-ratio: 1/1;
+	background: rgba(64, 46, 50, 0.8);
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 50%;
+	max-width: 11.68375rem;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.reserve-circle__brown::after {
+	aspect-ratio: 1/1;
+	background: linear-gradient(216deg, rgba(213, 148, 129, 0.8) -4.1%, rgba(64, 46, 50, 0.8) 96.92%);
+	border-radius: 50%;
+	bottom: 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: opacity 0.3s ease-out;
+	width: 100%;
+}
+
+.reserve-circle__brown:hover::after {
+	opacity: 0;
+}
+
+.reserve-circle__en {
+	leading-trim: both;
+	text-edge: cap;
+	color: #B9A89B;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	margin-top: -1.25rem;
+	position: relative;
+	text-indent: 0.04em;
+	text-transform: capitalize;
+	z-index: 25;
+}
+
+.reserve-circle__ja {
+	leading-trim: both;
+	text-edge: cap;
+	color: #FFF;
+	font-family: "Zen Old Mincho", serif;
+	font-size: 1.5625rem;
+	font-weight: 700;
+	line-height: 1.4;
+	position: relative;
+	z-index: 25;
+}
+
+.reserve-circle__icon {
+	height: 2.246875rem;
+	position: relative;
+	width: 2.0865625rem;
+	z-index: 25;
+}
+
+.reserve-circle__icon svg {
+	height: 100%;
+	margin-bottom: -1.875rem;
+	max-height: 2.246875rem;
+	max-width: 2.0865625rem;
+	width: 100%;
+}
+
+.scroll-bar {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 3.125rem;
+	justify-content: center;
+}
+
+.scroll-bar__text {
+	leading-trim: both;
+	text-edge: cap;
+	color: #7B695A;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	text-indent: 0.04em;
+	text-transform: capitalize;
+	transform: rotate(90deg);
+}
+
+.scroll-bar__bar {
+	background: #FFF;
+	height: 5.47925rem;
+	margin-left: -0.3125rem;
+	overflow: hidden;
+	position: relative;
+	width: 1px;
+}
+
+.scroll-bar__bar::after {
+	animation: scroll 2.5s ease-in-out infinite normal;
+	background: #998676;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 5.47925rem;
+	left: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* 『スクロール』アニメーション定義 */
+
 .sns-wrap {
 	align-items: center;
 	display: flex;
@@ -677,6 +822,20 @@ html {
 
 .drawer-menu__sns-wrap {
 	margin-top: 1.5625rem;
+}
+
+.fv {
+	background: url(../images/common/fv_bg-sp.webp) no-repeat center center/cover;
+	max-height: 50.125rem;
+}
+
+.fv__texts {
+	font-size: 1.1054375rem;
+	gap: 0.9375rem;
+}
+
+.fv__text01 {
+	width: 1rem;
 }
 
 .header {
@@ -796,6 +955,26 @@ html {
 
 html {
 	font-size: 4.2666666667vw;
+}
+
+}
+
+@keyframes scroll {
+
+0% {
+	transform: translateY(-100%); /* 画面外上部に位置 */
+}
+
+15% {
+	transform: translateY(0%); /* 中央に移動 */
+}
+
+30% {
+	transform: translateY(100%); /* 画面外下部に移動 */
+}
+
+100% {
+	transform: translateY(100%); /* 同じ位置を維持 */
 }
 
 }
