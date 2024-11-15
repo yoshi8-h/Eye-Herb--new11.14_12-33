@@ -933,7 +933,7 @@ a {
 	display: none;
 }
 
-.title01--footer .title01__img img {
+.title01--footer img {
 	aspect-ratio: 1/1;
 	width: 8.693875rem;
 }
@@ -1030,6 +1030,40 @@ html {
 
 .drawer-menu__sns-wrap {
 	margin-top: 1.5625rem;
+}
+
+.footer {
+	padding-bottom: 10.625rem;
+	padding-top: 4.054375rem;
+}
+
+.footer__top {
+	align-items: flex-start;
+	gap: 0rem;
+}
+
+.footer__info {
+	margin-top: 2.040625rem;
+}
+
+.footer__sns-sp {
+	margin-top: 2.375rem;
+}
+
+.footer__bottom {
+	flex-direction: column-reverse;
+	gap: 2.5rem;
+	justify-content: center;
+	margin-top: 2.016875rem;
+}
+
+.footer__copyright {
+	margin-left: 0;
+	margin-top: 2rem;
+}
+
+.footer__policy {
+	margin-top: 0;
 }
 
 .fv {
@@ -1145,9 +1179,60 @@ html {
 	display: none;
 }
 
+.info--footer .info__title {
+	font-size: 0.875rem;
+	text-align: left;
+}
+
+.info--footer .info__address {
+	font-size: 0.875rem;
+	text-align: left;
+}
+
+.info--footer .info__tel {
+	font-size: 0.875rem;
+	margin-top: 1.25rem;
+	text-align: left;
+}
+
 .inner {
 	padding-left: 24.5px;
 	padding-right: 24.5px;
+}
+
+.nav--footer.nav {
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 0;
+	justify-content: center;
+	margin-top: 2.40875rem;
+}
+
+.nav--footer .nav__item {
+	leading-trim: both;
+	text-edge: cap;
+	border-top: 1px solid #7B695A;
+	color: #FFF;
+	display: block;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	text-indent: 0.04em;
+	text-transform: capitalize;
+	width: 100%;
+}
+
+.nav--footer .nav__item:nth-of-type(1) {
+	border-top: none;
+}
+
+.nav--footer .nav__item::after {
+	display: none;
 }
 
 .reserve-circle__brown {
@@ -1196,7 +1281,7 @@ html {
 }
 
 .sns-wrap--footer-sp.sns-wrap {
-	display: block;
+	display: flex;
 }
 
 .sns-wrap--footer-pc.sns-wrap {
@@ -1239,8 +1324,18 @@ html {
 	display: block;
 }
 
-.title01--footer .title01__img img {
+.title01--footer .title01__picture {
+	display: block;
+	margin-top: 1rem;
+}
+
+.title01--footer .title01__img {
+	margin-top: 0;
+}
+
+.title01--footer img {
 	aspect-ratio: 204.185/63.691;
+	max-width: 12.7615625rem;
 	width: 12.7615625rem;
 }
 
