@@ -220,6 +220,10 @@ a {
 	transform: translateY(0);
 }
 
+.footer {
+	background: #998676;
+}
+
 .fv {
 	background: url(../images/common/fv_bg.webp) no-repeat center center/cover;
 	height: 100vh;
@@ -429,7 +433,7 @@ a {
 	top: 0;
 	transform: translateY(-100%); /* 上からスライドインするための初期位置 */
 	transition: transform 0.3s ease; /* スムーズなスライドイン */
-	z-index: 500;
+	z-index: 5000;
 }
 
 .header2__inner {
@@ -730,6 +734,10 @@ a {
 	display: block;
 }
 
+.title01__text {
+	display: none;
+}
+
 @media screen and (max-width: 1200px) {
 
 .btn-reserve01 {
@@ -991,6 +999,7 @@ html {
 	leading-trim: both;
 	text-edge: cap;
 	color: #FFF;
+	display: block;
 	font-family: "Zen Old Mincho", serif;
 	font-size: 0.75rem;
 	font-weight: 700;

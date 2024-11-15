@@ -1,12 +1,55 @@
-  <!-- TOPへ戻るボタン -->
-  <a href="#" class="top-btn js-top-btn">
-  </a>
-
   <!-- footer -->
-  <footer class="footer l-footer <?php echo is_404() ? 'l-footer--404' : ''; ?>">
+  <footer class="footer l-footer">
     <div class="footer__inner inner">
-      footer
+      <div class="footer__wrap">
+        <div class="footer__top">
+          <a class="footer__title title01 title01--footer">
+            <p class="title01__text">代官山に佇む癒しのプライベートサロン</p>
+            <!-- <div class="title01__img"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/title01-img-sp.webp" alt="Eye Herb"></div> -->
+            <picture class="title01__picture">
+              <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/title01-img-pc.webp">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/title01-img-sp.webp" alt="Eye Herb">
+            </picture>
+          </a>
+          <div class="footer__info info info--footer">
+            <p class="info__title">Eye Herb Beauty Salon</p>
+            <address class="info__address">東京都渋谷区代官山町2-5 コレタス代官山4F</address>
+            <div class="info__tel">【TEL】03-6416-4229 (12:00 - 19:00)</div>
+          </div>
+          <div class="footer__sns-sp sns-wrap">
+            <a href="" class="sns-wrap__insta"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/instagram-icon.webp" alt="instagram"></a>
+            <a href="" class="sns-wrap__line"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/line-icon.webp" alt="LINE"></a>
+          </div>
+        </div>
+        <div class="footer__nav nav nav--footer">
+          <a href="<?php echo esc_url(home_url('/')); ?>" class="nav__item">TOP</a>
+          <a href="<?php echo esc_url(get_permalink(get_page_by_path('about'))); ?>" class="nav__item">About Eye Herb</a>
+          <a href="<?php echo esc_url(get_permalink(get_page_by_path('menu'))); ?>" class="nav__item">Menu</a>
+          <a href="<?php echo esc_url(get_permalink(get_page_by_path('before-after'))); ?>" class="nav__item">Before/After</a>
+          <a href="<?php echo esc_url(get_permalink(get_page_by_path('recruit'))); ?>" class="nav__item">Recruit</a>
+          <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="nav__item">Contact</a>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-left">
+            <p class="footer__bottom-text">
+              このサイトはreCAPTHAによって保護されており、<br
+              ><a href="" target="_blank" class="footer__google-policy">Googleのプライバシーポリシー</a>と<br class="u-mobile"
+              ><a href="" target="_blank" class="footer__terms">利用規約</a>が適応されます。
+            </p>
+            <small class="footer__copyright">Copyright © 2024 Eye Herb Beauty Salon</small>
+          </div>
+          <div class="footer__bottom-right">
+            <div class="footer__sns-pc sns-wrap">
+              <a href="" class="sns-wrap__insta"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/instagram-icon.webp" alt="instagram"></a>
+              <a href="" class="sns-wrap__line"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/line-icon.webp" alt="LINE"></a>
+            </div>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('policy'))); ?>" class="footer__policy">個人情報保護方針</a>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- TOPへ戻るボタン -->
+    <a href="#" id="js-top-btn" class="footer__top-btn top-btn"></a>
   </footer>
 
   <?php wp_footer(); ?>
