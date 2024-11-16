@@ -1188,6 +1188,61 @@ html {
 	margin-top: 6.544375rem;
 }
 
+.cta {
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+}
+
+.cta__leaf {
+	bottom: calc(100% - 0.875rem);
+}
+
+.cta__leaf img {
+	width: 6.65125rem;
+}
+
+.cta__inner.inner {
+	max-width: 24.625rem;
+}
+
+.cta__title {
+	font-size: 2.4375rem;
+}
+
+.cta__text {
+	font-size: 0.875rem;
+}
+
+.cta__bottom {
+	gap: normal;
+	margin-top: 1.875rem;
+	padding-bottom: 1.5rem;
+	padding-left: 2.46%;
+	padding-right: 2.46%;
+	padding-top: 1.5rem;
+}
+
+.cta__left svg {
+	max-width: 2.3125rem;
+}
+
+.cta__middle {
+	margin-left: 0;
+}
+
+.cta__middle-title {
+	font-size: 1.125rem;
+}
+
+.cta__middle-text {
+	font-size: 0.75rem;
+}
+
+.cta__right {
+	flex-shrink: 0;
+	padding: 0.9375rem;
+}
+
 .drawer-menu {
 	background: #998676;
 	display: block;
