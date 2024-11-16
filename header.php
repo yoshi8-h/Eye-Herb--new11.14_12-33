@@ -50,7 +50,7 @@
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="header2__link">Contact</a>
           </nav>
           <div class="header2__reserve">
-            <a href="" class="header2__btn-reserve btn-reserve01">
+            <a href="" target="_blank" class="header2__btn-reserve btn-reserve01">
               <div class="btn-reserve01__wrap">
                 <div class="btn-reserve01__icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
@@ -94,8 +94,8 @@
             <div class="info__tel">【TEL】03-6416-4229 (12:00 - 19:00)</div>
           </div>
           <div class="drawer-menu__sns-wrap sns-wrap">
-            <a href="" class="sns-wrap__insta"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/instagram-icon.webp" alt="instagram"></a>
-            <a href="" class="sns-wrap__line"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/line-icon.webp" alt="LINE"></a>
+            <a href="" target="_blank" class="sns-wrap__insta"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/instagram-icon.webp" alt="instagram"></a>
+            <a href="" target="_blank" class="sns-wrap__line"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/line-icon.webp" alt="LINE"></a>
           </div>
         </div>
       </div>

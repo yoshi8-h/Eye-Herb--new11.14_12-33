@@ -13,7 +13,7 @@
       </div>
       <div class="fv__logo"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fv-logo.webp" alt="Eye Herb"></div>
       <!-- (円形)予約ボタン -->
-      <a href="" class="fv__reserve-circle reserve-circle">
+      <a href="" target="_blank" class="fv__reserve-circle reserve-circle">
         <div class="reserve-circle__brown">
           <div class="reserve-circle__en">Reserve</div>
           <div class="reserve-circle__ja">予約する</div>

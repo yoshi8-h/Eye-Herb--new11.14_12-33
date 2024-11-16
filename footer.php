@@ -16,8 +16,8 @@
             <div class="info__tel">【TEL】03-6416-4229 (12:00 - 19:00)</div>
           </div>
           <div class="footer__sns-sp sns-wrap sns-wrap--footer-sp">
-            <a href="" class="sns-wrap__insta"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/instagram-icon.webp" alt="instagram"></a>
-            <a href="" class="sns-wrap__line"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/line-icon.webp" alt="LINE"></a>
+            <a href="" target="_blank" class="sns-wrap__insta"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/instagram-icon.webp" alt="instagram"></a>
+            <a href="" target="_blank" class="sns-wrap__line"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/line-icon.webp" alt="LINE"></a>
           </div>
         </div>
         <div class="footer__nav nav nav--footer">
@@ -48,7 +48,12 @@
       </div>
     </div>
     <!-- TOPへ戻るボタン -->
-    <a href="#" id="js-top-btn" class="footer__top-btn top-btn"></a>
+    <a href="#" id="js-top-btn" class="footer__top-btn top-btn">
+      <div class="top-btn__arrow">
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/top-btn_arrow.webp" alt="↑">
+      </div>
+      <div class="top-btn__text">PAGE TOP</div>
+    </a>
   </footer>
 
   <?php wp_footer(); ?>

@@ -224,6 +224,7 @@ a {
 	background: #998676;
 	padding-bottom: 2.593125rem;
 	padding-top: 2.545rem;
+	position: relative;
 }
 
 .footer__top {
@@ -309,6 +310,14 @@ a {
 
 .footer__policy:hover {
 	opacity: 0.7;
+}
+
+.footer__top-btn {
+	position: absolute;
+	right: calc(50% - min(48vw, 39.68rem));
+	top: 4rem;
+	width: -moz-fit-content;
+	width: fit-content;
 }
 
 .fv {
@@ -936,6 +945,44 @@ a {
 .title01--footer img {
 	aspect-ratio: 1/1;
 	width: 8.693875rem;
+}
+
+.top-btn {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1.125rem;
+	justify-content: center;
+}
+
+.top-btn:hover .top-btn__arrow {
+	transform: translateY(-0.3125rem);
+}
+
+.top-btn__arrow {
+	transition: transform 0.2s ease-out;
+}
+
+.top-btn__arrow img {
+	aspect-ratio: 10/75;
+	height: 4.6875rem;
+	width: 0.625rem;
+}
+
+.top-btn__text {
+	leading-trim: both;
+	text-edge: cap;
+	color: #FFF;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1;
+	text-align: center;
+	text-indent: 0.04em;
+	text-transform: capitalize;
+	width: 1.125rem; /* 横幅を適切に設定 */
+	writing-mode: vertical-rl; /* 縦書きに変更 */
 }
 
 @media screen and (max-width: 1200px) {
