@@ -42,16 +42,16 @@
     <section class="about l-about">
       <picture class="about__img-left">
         <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-left-pc.webp">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-left-sp.webp" alt="お店の内装の店名">
+        <img class="js-scale-down-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-left-sp.webp" alt="お店の内装の店名">
       </picture>
       <picture class="about__img-right">
         <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-right-pc.webp">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-right-sp.webp" alt="お店の内装の電飾">
+        <img class="js-scale-down-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-right-sp.webp" alt="お店の内装の電飾">
       </picture>
       <div class="about__inner inner">
         <div class="about__wrap">
           <h2 class="about__title section-title01">About Eye Herb</h2>
-          <p class="about__text01">
+          <p class="about__text01 js-fadeIn-mask-left">
             全個室の落ち着いた空間で、<br
             >あなたの美しさを引き出す<br
             >特別なひとときを。
@@ -66,6 +66,88 @@
           </p>
           <div class="about__btn-wrap">
             <a href="" class="about__btn btn">View More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu セクション -->
+    <section class="menu l-menu">
+      <div class="menu__inner inner">
+        <div class="menu__wrap">
+        <h2 class="menu__title section-title01">Salon Menu</h2>
+          <div class="menu__contents contents">
+            <div class="contents__item content">
+              <picture class="content__img">
+                <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/content_img01-pc.webp">
+                <img class="js-scale-down-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/content_img01-sp.webp" alt="アイラッシュの施術風景">
+              </picture>
+              <div class="content__menu">
+                <div class="content__menu-top">
+                  <div class="content__menu-title">アイラッシュメニュー</div>
+                  <a href="" class="content__menu-link">料金表はこちら</a>
+                </div>
+                <ul class="content__menu-list list">
+                  <li class="list__item">
+                    <div class="list__item-text">パリジェンヌ</div>
+                    <div class="list__item-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                        <path d="M13.459 1.31934L19.459 7.31872L13.459 13.3193" stroke="black"/>
+                        <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list__item-text">ラッシュリフト</div>
+                    <div class="list__item-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                        <path d="M13.459 1.31934L19.459 7.31872L13.459 13.3193" stroke="black"/>
+                        <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list__item-text">フラットラッシュ</div>
+                    <div class="list__item-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                        <path d="M13.459 1.31934L19.459 7.31872L13.459 13.3193" stroke="black"/>
+                        <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list__item-text">ボリュームラッシュ</div>
+                    <div class="list__item-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                        <path d="M13.459 1.31934L19.459 7.31872L13.459 13.3193" stroke="black"/>
+                        <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list__item-text">LEDエクステ</div>
+                    <div class="list__item-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                        <path d="M13.459 1.31934L19.459 7.31872L13.459 13.3193" stroke="black"/>
+                        <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list__item-text">ラッシュアディクト　サロンケア</div>
+                    <div class="list__item-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                        <path d="M13.459 1.31934L19.459 7.31872L13.459 13.3193" stroke="black"/>
+                        <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
+                      </svg>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="menu__btn-wrap">
+            <a href="" class="menu__btn btn">View More</a>
           </div>
         </div>
       </div>

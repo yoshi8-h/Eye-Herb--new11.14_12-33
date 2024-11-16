@@ -222,11 +222,17 @@ a {
 .about__text01 {
 	leading-trim: both;
 	text-edge: cap;
+	-webkit-mask-image: linear-gradient(195deg, transparent 41.67%, rgba(0, 0, 0, 0.5) 50%, #000 58.33%);
+	-webkit-mask-size: 100% max(100%, 100vh); /* Safari用 */
+	-webkit-mask-repeat: no-repeat; /* Safari用 */
 	font-family: "Zen Old Mincho", serif;
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: 1.5;
 	margin-top: 1.875rem;
+	mask-image: linear-gradient(195deg, transparent 41.67%, rgba(0, 0, 0, 0.5) 50%, #000 58.33%);
+	mask-repeat: no-repeat; /* マスクの繰り返しを無効化 */
+	mask-size: 100% max(100%, 100vh); /* マスクのサイズ */
 	text-align: center;
 }
 

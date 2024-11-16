@@ -41,3 +41,54 @@ document.querySelector(".js-header__btn").addEventListener("click", function (e)
   document.documentElement.classList.toggle("is-fixed"); // htmlタグにis-fixedクラスをトグル
   document.body.classList.toggle("is-fixed"); // bodyタグにもis-fixedクラスをトグル
 });
+
+/* ================================================================================ */
+/*  アニメーション  */
+// ※jQueryなどの制御の記述は、GSAPの記述より前に書く必要あり。
+/* ================================================================================ */
+
+/* 文字などがジワッと左から表示されるアニメーション (サイト全体共通) */
+document.addEventListener('DOMContentLoaded', function () {
+  var fadeInMaskLeft = document.querySelectorAll(".js-fadeIn-mask-left");
+  fadeInMaskLeft.forEach(function (item) {
+    gsap.fromTo(item, {
+      maskPosition: "center top",
+      webkitMaskPosition: "center top"
+    }, {
+      maskPosition: "center 100%",
+      webkitMaskPosition: "center 100%",
+      duration: 1.4,
+      ease: "linear",
+      scrollTrigger: {
+        trigger: item,
+        start: 'top 70%',
+        once: true // 繰り返さず1回のみ実行
+        // markers:{
+        //   startColor: "green",
+        // },
+      }
+    });
+  });
+});
+
+/* 画像が、『拡大』→『縮小』される (サイト全体共通) */
+document.addEventListener('DOMContentLoaded', function () {
+  var scaleDownImages = document.querySelectorAll(".js-scale-down-img");
+  scaleDownImages.forEach(function (img) {
+    gsap.fromTo(img, {
+      scale: 1.2
+    }, {
+      scale: 1.0,
+      duration: .7,
+      ease: "out",
+      scrollTrigger: {
+        trigger: img,
+        start: 'top 60%',
+        once: true // 繰り返さず1回のみ実行
+        // markers:{
+        //   startColor: "green",
+        // },
+      }
+    });
+  });
+});
