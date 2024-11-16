@@ -163,6 +163,7 @@ a {
 
 .about {
 	background: #FFF7EF;
+	min-height: 47.125rem;
 	padding-bottom: 6.625rem;
 	padding-top: 6rem;
 	position: relative;
@@ -181,8 +182,9 @@ a {
 .about__img-left img {
 	-o-object-fit: cover;
 	aspect-ratio: 180/200.875;
+	max-width: 11.25rem;
 	object-fit: cover;
-	width: 11.25rem;
+	width: 12.5vw;
 }
 
 .about__img-right {
@@ -198,8 +200,9 @@ a {
 .about__img-right img {
 	-o-object-fit: cover;
 	aspect-ratio: 628.9/661.36;
+	max-width: 39.30625rem;
 	object-fit: cover;
-	width: 39.30625rem;
+	width: 43.6736111111vw;
 }
 
 .about__wrap {
@@ -207,7 +210,11 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-left: -34.375rem;
+	left: calc(50% - min(42vw, 33.75rem));
+	position: absolute;
+	top: 6rem;
+	width: -moz-fit-content;
+	width: fit-content;
 }
 
 .about__text01 {
@@ -217,6 +224,7 @@ a {
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: 1.5;
+	margin-top: 1.875rem;
 	text-align: center;
 }
 
@@ -225,12 +233,12 @@ a {
 	text-edge: cap;
 	font-size: 1rem;
 	line-height: 2;
-	margin-top: 3.0625rem;
+	margin-top: 1.875rem;
 	text-align: center;
 }
 
 .about__btn {
-	margin-top: 3rem;
+	margin-top: 2.5rem;
 	min-width: 15.6875rem;
 }
 
@@ -1132,6 +1140,8 @@ a {
 	font-weight: 700;
 	letter-spacing: 0.04em;
 	line-height: 1.4;
+	margin: 0;
+	padding-bottom: 1.25rem;
 	position: relative;
 	text-indent: 0.04em;
 	text-transform: capitalize;
@@ -1139,7 +1149,7 @@ a {
 
 .section-title01::after {
 	background: #7B695A;
-	bottom: -1.25rem;
+	bottom: 0;
 	content: "";
 	display: block;
 	height: 1px;
