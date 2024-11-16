@@ -40,8 +40,14 @@
 
     <!-- about セクション -->
     <section class="about l-about">
-      <div class="about__img-left"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-left.webp" alt="お店の内装の店名"></div>
-      <div class="about__img-right"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-right.webp" alt="お店の内装の電飾"></div>
+      <picture class="about__img-left">
+        <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-left-pc.webp">
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-left-sp.webp" alt="お店の内装の店名">
+      </picture>
+      <picture class="about__img-right">
+        <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-right-pc.webp">
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-right-sp.webp" alt="お店の内装の電飾">
+      </picture>
       <div class="about__inner inner">
         <div class="about__wrap">
           <h2 class="about__title section-title01">About Eye Herb</h2>
@@ -52,10 +58,10 @@
           </p>
           <p class="about__text02">
             当店はプライベートサロンです。<br
-            >高級感のあるワンランク上の施術をご提供いたします。<br
-            >リラックスした贅沢な時間をお過ごしいただきながら、<br
+            >高級感のあるワンランク上の施術を<br class="u-mobile">ご提供いたします。<br class="u-desktop"
+            >リラックスした<br class="u-mobile">贅沢な時間をお過ごしいただきながら、<br
             >お客様一人ひとりに合った理想の目元を叶えます。<br
-            >ピーリングやフェイシャルワックスは男性のお客様もご利用可能です。<br
+            >ピーリングやフェイシャルワックスは<br class="u-mobile">男性のお客様もご利用可能です。<br
             >皆様のご来店を心よりお待ちしております。
           </p>
           <div class="about__btn-wrap">
