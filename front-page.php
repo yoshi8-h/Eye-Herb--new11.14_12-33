@@ -40,6 +40,8 @@
 
     <!-- about セクション -->
     <section class="about l-about">
+      <div class="about__img-left"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-left.webp" alt="お店の内装の店名"></div>
+      <div class="about__img-right"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img-right.webp" alt="お店の内装の電飾"></div>
       <div class="about__inner inner">
         <div class="about__wrap">
           <h2 class="about__title section-title01">About Eye Herb</h2>

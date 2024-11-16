@@ -161,6 +161,79 @@ a {
 	margin-top: 5.915rem;
 }
 
+.about {
+	background: #FFF7EF;
+	padding-bottom: 6.625rem;
+	padding-top: 6rem;
+	position: relative;
+}
+
+.about__img-left {
+	border-radius: 0px 7.4375rem 0px 0px;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.about__img-left img {
+	-o-object-fit: cover;
+	aspect-ratio: 180/200.875;
+	object-fit: cover;
+	width: 11.25rem;
+}
+
+.about__img-right {
+	border-radius: 0px 0px 0px 19.09375rem;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.about__img-right img {
+	-o-object-fit: cover;
+	aspect-ratio: 628.9/661.36;
+	object-fit: cover;
+	width: 39.30625rem;
+}
+
+.about__wrap {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: -34.375rem;
+}
+
+.about__text01 {
+	leading-trim: both;
+	text-edge: cap;
+	font-family: "Zen Old Mincho", serif;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.about__text02 {
+	leading-trim: both;
+	text-edge: cap;
+	font-size: 1rem;
+	line-height: 2;
+	margin-top: 3.0625rem;
+	text-align: center;
+}
+
+.about__btn {
+	margin-top: 3rem;
+	min-width: 15.6875rem;
+}
+
 .btn-reserve01 {
 	background: #402E32;
 	display: block;
@@ -214,6 +287,32 @@ a {
 	font-size: 1rem;
 	font-weight: 700;
 	line-height: 1.4;
+}
+
+.btn {
+	leading-trim: both;
+	text-edge: cap;
+	border: 1px solid #000;
+	display: inline-block;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1.25rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	padding-bottom: 1.5rem;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+	padding-top: 1.5rem;
+	text-align: center;
+	text-indent: 0.04em;
+	text-transform: capitalize;
+	transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+	background: #000;
+	border: 1px solid #000;
+	color: #FFF7EF;
 }
 
 .cta {
@@ -1022,6 +1121,33 @@ a {
 }
 
 /* 『スクロール』アニメーション定義 */
+
+.section-title01 {
+	leading-trim: both;
+	text-edge: cap;
+	color: #7B695A;
+	display: inline-block;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1.9375rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	position: relative;
+	text-indent: 0.04em;
+	text-transform: capitalize;
+}
+
+.section-title01::after {
+	background: #7B695A;
+	bottom: -1.25rem;
+	content: "";
+	display: block;
+	height: 1px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 5rem;
+}
 
 .sns-wrap {
 	align-items: center;
