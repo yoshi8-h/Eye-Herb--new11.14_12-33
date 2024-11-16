@@ -1,3 +1,49 @@
+  <!-- cta セクション -->
+  <a href="" target="_blank" class="cta l-cta">
+    <div class="cta__leaf"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/cta_leaf.webp" alt=""></div>
+    <picture class="cta__bg">
+      <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/cta_bg-pc.webp">
+      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/cta_bg-sp.webp" alt="Eye Herb">
+    </picture>
+    <div class="cta__inner inner">
+      <div class="cta__top">
+        <h2 class="cta__title">reservation</h2>
+        <p class="cta__text">ご予約は下記リンク先からお願いいたします。</p>
+      </div>
+      <div class="cta__bottom">
+        <div class="cta__left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="43" viewBox="0 0 40 43" fill="none">
+            <g clip-path="url(#clip0_1_2215)">
+              <path d="M15.507 16.7344H17.946V19.3594H15.507V16.7344ZM22.8239 32.4844H25.2629V35.1094H22.8239V32.4844ZM30.1409 16.7344H32.5799V19.3594H30.1409V16.7344ZM22.8239 16.7344H25.2629V19.3594H22.8239V16.7344ZM15.507 21.9844H17.946V24.6094H15.507V21.9844ZM8.19001 21.9844H10.629V24.6094H8.19001V21.9844ZM30.1409 21.9844H32.5799V24.6094H30.1409V21.9844ZM22.8239 21.9844H25.2629V24.6094H22.8239V21.9844ZM15.507 27.2344H17.946V29.8594H15.507V27.2344ZM8.19001 27.2344H10.629V29.8594H8.19001V27.2344ZM30.1409 27.2344H32.5799V29.8594H30.1409V27.2344ZM22.8239 27.2344H25.2629V29.8594H22.8239V27.2344ZM15.507 32.4844H17.946V35.1094H15.507V32.4844ZM8.19001 32.4844H10.629V35.1094H8.19001V32.4844ZM39.8969 3.60938V40.3594H0.873047V3.60938H8.19001V0.984375H10.629V3.60938H30.1409V0.984375H32.5799V3.60938H39.8969ZM3.31203 6.23438V11.4844H37.4579V6.23438H32.5799V8.85938H30.1409V6.23438H10.629V8.85938H8.19001V6.23438H3.31203ZM37.4579 37.7344V14.1094H3.31203V37.7344H37.4579Z" fill="white"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_1_2215">
+                <rect width="39.0238" height="42" fill="white" transform="translate(0.873047 0.984375)"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="cta__middle">
+          <div class="cta__middle-title">予約はこちら</div>
+          <p class="cta__middle-text">ホットペッパービューティーサイトへ</p>
+        </div>
+        <div class="cta__right">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+            <g clip-path="url(#clip0_1_2218)">
+              <path d="M14.7553 15.8721H2.50076V3.94316H9.18504V2.88281H1.38672V16.9324H15.8693V9.50999H14.7553V15.8721Z" fill="white"/>
+              <path d="M11.4129 1.02734V2.08769H16.1954L7.39844 10.4607L8.18614 11.2104L16.9832 2.83746V7.38944H18.0972V1.02734H11.4129Z" fill="white"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_1_2218">
+                <rect width="17.8247" height="16.9656" fill="white" transform="translate(0.830078 0.496094)"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </a>
+
   <!-- footer -->
   <footer class="footer l-footer">
     <div class="footer__inner inner">
