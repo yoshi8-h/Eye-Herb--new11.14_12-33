@@ -38,6 +38,31 @@
 			</div>
     </div>
 
+    <!-- about セクション -->
+    <section class="about l-about">
+      <div class="about__inner inner">
+        <div class="about__wrap">
+          <h2 class="about__title section-title01">About Eye Herb</h2>
+          <p class="about__text01">
+            全個室の落ち着いた空間で、<br
+            >あなたの美しさを引き出す<br
+            >特別なひとときを。
+          </p>
+          <p class="about__text02">
+            当店はプライベートサロンです。<br
+            >高級感のあるワンランク上の施術をご提供いたします。<br
+            >リラックスした贅沢な時間をお過ごしいただきながら、<br
+            >お客様一人ひとりに合った理想の目元を叶えます。<br
+            >ピーリングやフェイシャルワックスは男性のお客様もご利用可能です。<br
+            >皆様のご来店を心よりお待ちしております。
+          </p>
+          <div class="about__btn-wrap">
+            <a href="" class="about__btn btn">View More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
 <?php get_footer(); ?>
