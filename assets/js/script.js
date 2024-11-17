@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
       ease: "linear",
       scrollTrigger: {
         trigger: item,
-        start: 'top 70%',
+        start: 'top 75%',
         once: true // 繰り返さず1回のみ実行
         // markers:{
         //   startColor: "green",
@@ -83,12 +83,51 @@ document.addEventListener('DOMContentLoaded', function () {
       ease: "out",
       scrollTrigger: {
         trigger: img,
-        start: 'top 60%',
+        start: 'top 80%',
         once: true // 繰り返さず1回のみ実行
         // markers:{
         //   startColor: "green",
         // },
       }
+    });
+  });
+});
+
+/* -------------------------------------------------------------------------------- */
+/* 複数の文字行が時差でフワッと下から出現 (左から順番に時差で) */
+// FVのテキスト『代官山に佇む癒しの』『完全プライベートサロン』の部分
+
+document.addEventListener('DOMContentLoaded', function () {
+  // ページ内の全てのアイテムコンテナ(複数枚アイテムのコンテナ。PC時にトリガーとなる要素)を取得
+  var itemContainers = document.querySelectorAll(".js-items-fadeInUp-trigger");
+  itemContainers.forEach(function (container) {
+    var item = container.querySelectorAll(".js-item-fadeInUp"); // そのコンテナ内のアイテムを全て取得
+    gsap.fromTo(item, {
+      y: 40,
+      autoAlpha: 0
+    }, {
+      y: 0,
+      autoAlpha: 1,
+      stagger: .35,
+      duration: .8,
+      ease: "out",
+      delay: .9
+    });
+  });
+});
+
+// FVの、同時に表示させる要素 (フワッと下から表示) (少し遅延させtから表示)
+document.addEventListener('DOMContentLoaded', function () {
+  var fadeInUpsDelay = document.querySelectorAll(".js-fadeInUp-delay"); // ページ内の、このアニメーションをさせたい全ての要素を取得
+
+  fadeInUpsDelay.forEach(function (item) {
+    gsap.fromTo(item, {
+      y: 20,
+      autoAlpha: 0
+    }, {
+      y: 0,
+      autoAlpha: 1,
+      delay: 1.6
     });
   });
 });
