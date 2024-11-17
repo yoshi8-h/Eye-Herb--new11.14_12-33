@@ -568,6 +568,87 @@ a {
 	width: 1.1125rem;
 }
 
+.cta2 {
+	background: #FFF7EF;
+}
+
+.cta2__item {
+	border-top: 1px solid #402E32;
+	display: block;
+	padding-bottom: 4.0625rem;
+	padding-top: 5.625rem;
+	transition: opacity 0.2s ease-out;
+}
+
+.cta2__item:hover {
+	opacity: 0.8;
+}
+
+.cta2__item:hover .cta2__item-arrow {
+	transform: translateX(0.625rem);
+}
+
+.cta2__item-inner {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.cta2__item:last-of-type {
+	border-bottom: 1px solid #402E32;
+}
+
+.cta2__item-left {
+	leading-trim: both;
+	text-edge: cap;
+	color: #7B695A;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 2.4375rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	text-indent: 0.04em;
+	text-transform: capitalize;
+}
+
+.cta2__item-right {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	width: 51.66%;
+}
+
+.cta2__item-text1 {
+	leading-trim: both;
+	text-edge: cap;
+	font-family: "Zen Old Mincho", serif;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+.cta2__item-text2 {
+	leading-trim: both;
+	text-edge: cap;
+	color: #B9A89B;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	margin-top: 0.1875rem;
+	text-indent: 0.04em;
+	text-transform: capitalize;
+}
+
+.cta2__item-arrow {
+	transition: transform 0.2s ease-out;
+}
+
+.cta2__item-arrow svg {
+	width: 4.6875rem;
+}
+
 .drawer-menu {
 	display: none;
 }
@@ -1670,6 +1751,32 @@ html {
 	padding: 0.9375rem;
 }
 
+.cta2__item {
+	padding-bottom: 2.8125rem;
+	padding-top: 2.8125rem;
+}
+
+.cta2__item-inner {
+	display: block;
+}
+
+.cta2__item-left {
+	display: none;
+}
+
+.cta2__item-right {
+	width: 100%;
+}
+
+.cta2__item-text1 {
+	font-size: 1.25rem;
+}
+
+.cta2__item-text2 {
+	font-size: 1rem;
+	margin-top: 0.625rem;
+}
+
 .drawer-menu {
 	background: #998676;
 	display: block;
@@ -1888,6 +1995,12 @@ html {
 
 .list__item-text {
 	font-size: 0.875rem;
+}
+
+.menu {
+	background: url(../images/common/menu_bg-sp.webp) no-repeat center center/cover;
+	padding-bottom: 4rem;
+	padding-top: 4rem;
 }
 
 .menu__inner {

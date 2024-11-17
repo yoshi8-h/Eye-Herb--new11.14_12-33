@@ -222,6 +222,50 @@
       </div>
     </section>
 
+    <!-- cta2 -->
+    <div class="cta2 l-cta2">
+      <div class="cta2__inner">
+        <div class="cta2__wrap">
+          <a href="" class="cta2__item">
+            <div class="cta2__item-inner inner">
+              <div class="cta2__item-left">Recruit Info</div>
+              <div class="cta2__item-right">
+                <div class="cta2__item-texts">
+                  <div class="cta2__item-text1">採用情報はこちら</div>
+                  <div class="cta2__item-text2 u-desktop">Eye Herb Beauty Salon</div>
+                  <div class="cta2__item-text2 u-mobile">Recruit Info</div>
+                </div>
+                <div class="cta2__item-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="77" height="18" viewBox="0 0 77 18" fill="none">
+                    <line x1="0.130859" y1="8.78516" x2="75.3086" y2="8.78516" stroke="#402E32"/>
+                    <path d="M67.3086 0.867188L75.3086 8.86637L67.3086 16.8672" stroke="#402E32"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="cta2__item">
+            <div class="cta2__item-inner inner">
+              <div class="cta2__item-left">Contact Form</div>
+              <div class="cta2__item-right">
+                <div class="cta2__item-texts">
+                  <div class="cta2__item-text1">お問い合わせはこちら</div>
+                  <div class="cta2__item-text2 u-desktop">Contact the salon</div>
+                  <div class="cta2__item-text2 u-mobile">Contact Form</div>
+                </div>
+                <div class="cta2__item-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="77" height="18" viewBox="0 0 77 18" fill="none">
+                    <line x1="0.130859" y1="8.78516" x2="75.3086" y2="8.78516" stroke="#402E32"/>
+                    <path d="M67.3086 0.867188L75.3086 8.86637L67.3086 16.8672" stroke="#402E32"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
   </main>
 
 <?php get_footer(); ?>
