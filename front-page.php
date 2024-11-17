@@ -78,17 +78,19 @@
         <h2 class="menu__title section-title01">Salon Menu</h2>
           <div class="menu__contents contents">
             <div class="contents__item content">
-              <picture class="content__img">
-                <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/content_img01-pc.webp">
-                <img class="js-scale-down-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/content_img01-sp.webp" alt="アイラッシュの施術風景">
-              </picture>
+              <div class="content__img-wrap">
+                <picture class="content__img">
+                  <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/content-menu-img01-pc.webp">
+                  <img class="js-scale-down-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/content-menu-img01-sp.webp" alt="アイラッシュの施術風景">
+                </picture>
+              </div>
               <div class="content__menu">
                 <div class="content__menu-top">
                   <div class="content__menu-title">アイラッシュメニュー</div>
-                  <a href="" class="content__menu-link">料金表はこちら</a>
+                  <a href="" class="content__menu-link"><span class="content__menu-text">料金表はこちら</span></a>
                 </div>
-                <ul class="content__menu-list list">
-                  <li class="list__item">
+                <div class="content__menu-list list">
+                  <a href="" class="list__item">
                     <div class="list__item-text">パリジェンヌ</div>
                     <div class="list__item-arrow">
                       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
@@ -96,8 +98,8 @@
                         <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
                       </svg>
                     </div>
-                  </li>
-                  <li class="list__item">
+                  </a>
+                  <a href="" class="list__item">
                     <div class="list__item-text">ラッシュリフト</div>
                     <div class="list__item-arrow">
                       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
@@ -105,8 +107,8 @@
                         <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
                       </svg>
                     </div>
-                  </li>
-                  <li class="list__item">
+                  </a>
+                  <a href="" class="list__item">
                     <div class="list__item-text">フラットラッシュ</div>
                     <div class="list__item-arrow">
                       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
@@ -114,8 +116,8 @@
                         <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
                       </svg>
                     </div>
-                  </li>
-                  <li class="list__item">
+                  </a>
+                  <a href="" class="list__item">
                     <div class="list__item-text">ボリュームラッシュ</div>
                     <div class="list__item-arrow">
                       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
@@ -123,8 +125,8 @@
                         <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
                       </svg>
                     </div>
-                  </li>
-                  <li class="list__item">
+                  </a>
+                  <a href="" class="list__item">
                     <div class="list__item-text">LEDエクステ</div>
                     <div class="list__item-arrow">
                       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
@@ -132,8 +134,8 @@
                         <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
                       </svg>
                     </div>
-                  </li>
-                  <li class="list__item">
+                  </a>
+                  <a href="" class="list__item">
                     <div class="list__item-text">ラッシュアディクト　サロンケア</div>
                     <div class="list__item-arrow">
                       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
@@ -141,8 +143,75 @@
                         <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
                       </svg>
                     </div>
-                  </li>
-                </ul>
+                  </a>
+                </div>
+              </div>
+              <div class="content__btn-sp">
+                <a href="" class="content__btn btn">View More</a>
+              </div>
+            </div>
+            <div class="contents__item content">
+              <div class="content__img-wrap">
+                <picture class="content__img">
+                  <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/content-menu-img02-pc.webp">
+                  <img class="js-scale-down-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/content-menu-img02-sp.webp" alt="エステの施術風景">
+                </picture>
+              </div>
+              <div class="content__menu">
+                <div class="content__menu-top">
+                  <div class="content__menu-title">エステメニュー</div>
+                  <a href="" class="content__menu-link"><span class="content__menu-text">料金表はこちら</span></a>
+                </div>
+                <div class="content__menu-list list">
+                  <a href="" class="list__item">
+                    <div class="list__item-text">ララピール</div>
+                    <div class="list__item-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                        <path d="M13.459 1.31934L19.459 7.31872L13.459 13.3193" stroke="black"/>
+                        <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
+                      </svg>
+                    </div>
+                  </a>
+                  <a href="" class="list__item">
+                    <div class="list__item-text">プラピール</div>
+                    <div class="list__item-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                        <path d="M13.459 1.31934L19.459 7.31872L13.459 13.3193" stroke="black"/>
+                        <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
+                      </svg>
+                    </div>
+                  </a>
+                  <a href="" class="list__item">
+                    <div class="list__item-text">o.h.lハーブピーリング</div>
+                    <div class="list__item-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                        <path d="M13.459 1.31934L19.459 7.31872L13.459 13.3193" stroke="black"/>
+                        <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
+                      </svg>
+                    </div>
+                  </a>
+                  <a href="" class="list__item">
+                    <div class="list__item-text">日本産ハーバルピール</div>
+                    <div class="list__item-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                        <path d="M13.459 1.31934L19.459 7.31872L13.459 13.3193" stroke="black"/>
+                        <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
+                      </svg>
+                    </div>
+                  </a>
+                  <a href="" class="list__item">
+                    <div class="list__item-text">フェイシャル</div>
+                    <div class="list__item-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                        <path d="M13.459 1.31934L19.459 7.31872L13.459 13.3193" stroke="black"/>
+                        <line x1="0.921875" y1="7.13232" x2="18.9219" y2="7.13232" stroke="black"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="content__btn-sp">
+                <a href="" class="content__btn btn">View More</a>
               </div>
             </div>
           </div>
