@@ -2,9 +2,30 @@
 
   <main class="main">
     <!-- fv2 -->
-    <div class="fv2"></div>
+    <div class="fv2 fv2--about"></div>
 
-    
+    <!-- page-top (ページの先頭部分) -->
+    <div class="page-top l-page-top">
+      <div class="page-top__inner inner">
+        <div class="page-top__wrap">
+          <!-- ページタイトル -->
+          <h2 class="page-top__title title02">
+            <div class="title02__main">About Eye Herb</div>
+            <div class="title02__sub">サロンについて</div>
+          </h2>
+          <!-- パンくずリスト -->
+          <nav class="page-top__breadcrumb breadcrumb">
+            <span property="itemListElement" typeof="ListItem">
+              <a property="item" typeof="WebPage" title="" href="" class="home">
+                <span property="name">TOP</span>
+              </a>
+              <meta property="position" content="1">
+            </span><span class="breadcrumb__separator"></span>
+            <span property="itemListElement" typeof="ListItem"><span property="name" class="archive post-campaign-archive current-item">サロンについて</span><meta property="url" content=""><meta property="position" content="2"></span>  <!-- 『bcn_display();』という関数がある時のみ表示 (プラグイン『Breadcrumb NavXT』が有効化されている時) -->
+          </nav>
+        </div>
+      </div>
+    </div>
 
     <!-- access セクション -->
     <section class="access l-access">
