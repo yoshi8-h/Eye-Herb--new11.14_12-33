@@ -4,6 +4,39 @@ jQuery(function ($) {// この中であればWordpressでも「$」が使用可�
 });
 
 /* -------------------------------------------------------------------------------- */
+/* ページ遷移アニメーション (フェード) (jQuery) */
+// <body>タグに、ページ遷移時に『fade』クラスを追加する事で、ページ遷移時にフェードイン-アウトのアニメーションを実装。
+(function ($) {
+  'use strict';
+
+  $(document).ready(function () {
+    // ページ表示時にfadeクラスを追加
+    $('body').addClass('fade');
+
+    // アニメーション終了後にfadeクラスを削除
+    $('.page-shift').on('animationend', function () {
+      $('body').removeClass('fade');
+    });
+
+    // ページ遷移時に再びfadeクラスを追加して遷移アニメーションを実行
+    $('a').on('click', function (e) {
+      var link = $(this).attr('href');
+
+      // 外部リンクやアンカーリンクは除外
+      if (link && link.indexOf(window.location.origin) === 0 && link !== window.location.href) {
+        e.preventDefault();
+        $('body').addClass('fade');
+
+        // 遷移先へのリダイレクトを少し遅らせる
+        setTimeout(function () {
+          window.location.href = link;
+        }, 300); // アニメーションの時間に応じて調整
+      }
+    });
+  });
+})(jQuery);
+
+/* -------------------------------------------------------------------------------- */
 /* 『header』と『header2 (追従ヘッダー)』のスクロール時の挙動を制御 */
 // ページ先頭では『header』を表示し、少しでもスクロールしたら『header2』に切り替わる
 document.addEventListener("DOMContentLoaded", function () {
@@ -61,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
       ease: "linear",
       scrollTrigger: {
         trigger: item,
-        start: 'top 75%',
+        start: 'top 80%',
         once: true // 繰り返さず1回のみ実行
         // markers:{
         //   startColor: "green",
@@ -96,7 +129,6 @@ document.addEventListener('DOMContentLoaded', function () {
 /* -------------------------------------------------------------------------------- */
 /* 複数の文字行が時差でフワッと下から出現 (左から順番に時差で) */
 // FVのテキスト『代官山に佇む癒しの』『完全プライベートサロン』の部分
-
 document.addEventListener('DOMContentLoaded', function () {
   // ページ内の全てのアイテムコンテナ(複数枚アイテムのコンテナ。PC時にトリガーとなる要素)を取得
   var itemContainers = document.querySelectorAll(".js-items-fadeInUp-trigger");
@@ -111,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
       stagger: .35,
       duration: .8,
       ease: "out",
-      delay: .9
+      delay: 1.1
     });
   });
 });
@@ -127,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, {
       y: 0,
       autoAlpha: 1,
-      delay: 1.6
+      delay: 1.8
     });
   });
 });

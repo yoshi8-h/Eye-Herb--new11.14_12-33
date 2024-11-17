@@ -8,6 +8,9 @@
   <?php wp_head(); ?>
 </head>
 <body>
+  <!-- ページ遷移アニメーション用 -->
+  <div class="page-shift"></div>
+
   <!-- header (ページ先頭時に表示) -->
   <header class="header">
     <div class="header__inner">

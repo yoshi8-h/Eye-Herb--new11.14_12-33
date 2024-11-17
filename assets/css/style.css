@@ -1425,6 +1425,23 @@ a {
 	transform-origin: left bottom;
 }
 
+.fade .page-shift {
+	animation-delay: 0.5s;
+	animation-duration: 0.8s;
+	animation-fill-mode: forwards;
+	animation-name: PageAnime-fade;
+	animation-timing-function: ease-in-out;
+	background: #FFF;
+	content: "";
+	height: 100vh;
+	left: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9000;
+}
+
 .post {
 	display: block;
 }
@@ -2609,6 +2626,19 @@ html {
 
 html {
 	font-size: 4.2666666667vw;
+}
+
+}
+
+@keyframes PageAnime-fade {
+
+0% {
+	opacity: 1;
+}
+
+100% {
+	display: none;
+	opacity: 0;
 }
 
 }
