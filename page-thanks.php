@@ -33,12 +33,14 @@
         <!-- contact phase -->
         <ul class="sub-contact__phase-list">
           <li class="sub-contact__phase-item is-active">入力</li>
-          <li class="sub-contact__phase-item">確認</li>
-          <li class="sub-contact__phase-item">完了</li>
+          <li class="sub-contact__phase-item is-active">確認</li>
+          <li class="sub-contact__phase-item is-active">完了</li>
         </ul>
-        <p class="sub-contact__text">必須項目を入力後、確認画面が表示されます。<br>内容に間違いがなければ、ページ最下部の確認ボタンを押してください。</p>
-        <div class="sub-contact__form">
-          <?php echo do_shortcode('[contact-form-7 id="a825511" title="入力画面"]'); ?>
+        <p class="sub-contact__text">送信が完了しました。<br>フォーム内容をご送信頂きまして誠にありがとうございます。担当者よりご案内させていただきます。返信にお時間を頂く場合がございます。予めご了承ください。</p>
+        <div class="sub-contact__button-top">
+          <div class="button-contact">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="button">TOPに戻る</a>
+          </div>
         </div>
       </div>
     </div>

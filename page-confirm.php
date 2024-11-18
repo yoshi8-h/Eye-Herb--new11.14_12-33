@@ -33,10 +33,10 @@
         <!-- contact phase -->
         <ul class="sub-contact__phase-list">
           <li class="sub-contact__phase-item is-active">入力</li>
-          <li class="sub-contact__phase-item">確認</li>
+          <li class="sub-contact__phase-item is-active">確認</li>
           <li class="sub-contact__phase-item">完了</li>
         </ul>
-        <p class="sub-contact__text">必須項目を入力後、確認画面が表示されます。<br>内容に間違いがなければ、ページ最下部の確認ボタンを押してください。</p>
+        <p class="sub-contact__text">入力内容をご確認ください。<br>内容に間違いがなければ、ページ最下部の送信ボタンを押して下さい。</p>
         <div class="sub-contact__form">
           <?php echo do_shortcode('[contact-form-7 id="a825511" title="入力画面"]'); ?>
         </div>
