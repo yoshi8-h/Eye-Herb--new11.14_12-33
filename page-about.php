@@ -66,9 +66,41 @@
       </div>
     </section>
 
-    <!-- access セクション -->
-    <section class="access l-access">
+    <!-- message セクション -->
+    <section class="message l-message">
+      <div class="message__inner inner">
+        <div class="message__wrap flex-section flex-section--2">
+          <h3 class="flex-section__title-sp title03">
+            <div class="title03__en">Message</div>
+            <div class="title03__ja">ご挨拶</div>
+          </h3>
+          <div class="flex-section__img"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/staff_img.webp" alt="Eye Herbロゴ"></div>
+          <div class="flex-section__texts">
+            <h3 class="flex-section__title title03">
+              <div class="title03__en">Message</div>
+              <div class="title03__ja">ご挨拶</div>
+            </h3>
+            <div class="flex-section__sub-title">
+              心を込めたおもてなしと、<br
+              >理想の美を叶える空間へ
+            </div>
+            <p class="flex-section__text">
+              当サロンは「お客様一人ひとりに合った施術を、お値段以上の技術で提供する」をコンセプトにスタッフ一同が心を込めて対応しております。お客様と共にキレイを喜び、リラックスできる空間に「また来たい」と思っていただけるよう、全力でサポートいたします。<br
+              >皆様のご来店を心よりお待ちしております。
+            </p>
+            <div class="flex-section__name">名字 名前</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- access--2 セクション -->
+    <section class="access access--2 l-access">
       <div class="access__inner inner">
+        <h3 class="access__title-2 title03">
+          <div class="title03__en">Access</div>
+          <div class="title03__ja">アクセス</div>
+        </h3>
         <div class="access__wrap">
           <div class="access__left">
             <h2 class="access__title section-title01 section-title01--none-bar">Access</h2>
@@ -87,6 +119,20 @@
           <div class="access__right">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.987943746225!2d139.70243747602382!3d35.65266867259646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5b36f4ada1%3A0x4585b16474b38f91!2z44CSMTUwLTAwMzQg5p2x5Lqs6YO95riL6LC35Yy65Luj5a6Y5bGx55S677yS4oiS77yVIOOCs-ODrOOCv-OCueS7o-WumOWxsSA0Zg!5e0!3m2!1sja!2sjp!4v1731834145436!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
+        </div>
+        <div class="access__images">
+          <picture class="access__img">
+            <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/access_img01-pc.webp">
+            <img class="js-scale-down-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/access_img01-sp.webp" alt="お店の建物の外観">
+          </picture>
+          <picture class="access__img">
+            <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/access_img02-pc.webp">
+            <img class="js-scale-down-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/access_img02-sp.webp" alt="お店の建物の入り口">
+          </picture>
+          <picture class="access__img">
+            <source media="(min-width: 768px)" srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/access_img03-pc.webp">
+            <img class="js-scale-down-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/access_img03-sp.webp" alt="お店の看板">
+          </picture>
         </div>
       </div>
     </section>

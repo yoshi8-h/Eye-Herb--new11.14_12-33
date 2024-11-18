@@ -80,7 +80,7 @@
   <div class="drawer-menu js-drawer-menu">
     <div class="drawer-menu__inner">
       <div class="drawer-menu__wrap">
-        <a class="drawer-menu__top title01">
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="drawer-menu__top title01">
           <p class="title01__text">代官山に佇む癒しのプライベートサロン</p>
           <div class="title01__img"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/title01-img-sp.webp" alt="Eye Herb"></div>
         </a>
