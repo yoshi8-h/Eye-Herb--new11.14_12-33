@@ -157,10 +157,6 @@ a {
 	text-decoration: none;
 }
 
-.l-page-top {
-	margin-top: 3.75rem;
-}
-
 .about {
 	background: #FFF7EF;
 	min-height: 47.125rem;
@@ -863,6 +859,57 @@ a {
 	transform: translateY(0);
 }
 
+.feature {
+	background: #FFF7EF;
+	padding-bottom: 7.5rem;
+	padding-top: 2rem;
+}
+
+.flex-section {
+	align-items: center;
+	display: flex;
+	gap: 3.9375rem;
+	justify-content: center;
+}
+
+.flex-section__img {
+	aspect-ratio: 1/1;
+	flex-grow: 1;
+	height: 31.75rem;
+	max-width: 31.75rem;
+	position: relative;
+	width: 31.75rem;
+}
+
+.flex-section__img img {
+	-o-object-fit: cover;
+	aspect-ratio: 1/1;
+	max-width: 29.25rem;
+	object-fit: cover;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 29.25rem;
+	z-index: 30;
+}
+
+.flex-section__img::after {
+	aspect-ratio: 1/1;
+	background: rgba(238, 213, 206, 0.4);
+	bottom: 0;
+	content: "";
+	height: 29.25rem;
+	left: 0;
+	max-width: 29.25rem;
+	position: absolute;
+	width: 29.25rem;
+	z-index: 10;
+}
+
+.flex-section__text {
+	margin-top: 3rem;
+}
+
 .footer {
 	background: #998676;
 	padding-bottom: 2.593125rem;
@@ -1044,8 +1091,13 @@ a {
 }
 
 .fv2 {
+	left: 0;
 	min-height: 22rem;
+	position: absolute;
+	right: 0;
+	top: 0;
 	width: 100vw;
+	z-index: 50;
 }
 
 .fv2--about.fv2 {
@@ -1532,17 +1584,19 @@ a {
 }
 
 .page-top {
+	background: #FFF7EF;
+	padding-top: 25rem;
 	position: relative;
 }
 
 .page-top::after {
 	background: url(../images/common/page-top_leaf-pc.webp) no-repeat center center/cover;
+	bottom: 0.625rem;
 	content: "";
-	height: 10.625rem;
+	height: 9.375rem;
 	position: absolute;
 	right: 0;
-	top: -1.25rem;
-	width: 14rem;
+	width: 12.5rem;
 }
 
 .post {
@@ -1891,6 +1945,43 @@ a {
 	margin-bottom: 0.4375rem;
 }
 
+.title03__en {
+	leading-trim: both;
+	text-edge: cap;
+	color: #1C1C1C;
+	display: inline-block;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	position: relative;
+	text-indent: 0.04em;
+	text-transform: capitalize;
+}
+
+.title03__en::after {
+	background: #1C1C1C;
+	content: "";
+	height: 1px;
+	left: calc(100% + 1rem);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 2.5rem;
+}
+
+.title03__ja {
+	leading-trim: both;
+	text-edge: cap;
+	color: #1C1C1C;
+	font-family: "Zen Old Mincho", serif;
+	font-size: 1.9375rem;
+	font-weight: 700;
+	line-height: 1.4;
+	margin-top: 1.5625rem;
+}
+
 .top-btn {
 	align-items: center;
 	display: flex;
@@ -1988,10 +2079,6 @@ html {
 
 html {
 	font-size: 16px;
-}
-
-.l-page-top {
-	margin-top: 2.125rem;
 }
 
 .about {

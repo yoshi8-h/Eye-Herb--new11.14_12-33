@@ -27,6 +27,25 @@
       </div>
     </div>
 
+    <!-- feature セクション -->
+    <section class="feature l-feature">
+      <div class="feature__inner inner">
+        <div class="feature__wrap flex-section">
+          <div class="flex-section__img"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/logo-03.webp" alt="Eye Herbロゴ"></div>
+          <div class="flex-section__texts">
+            <h3 class="flex-section__title title03">
+              <div class="title03__en">Features of Eye Herb</div>
+              <div class="title03__ja">Eye Herbの特徴</div>
+            </h3>
+            <p class="flex-section__text">
+              当サロンではまつ毛、眉毛、フェイシャルワックス、ピーリングなど、複数の施術を同時にお受けいただけます。また、メイクルームを完備しており施術後もゆったりとお過ごしいただけます。3つのベッドはすべて完全個室で、プライベート空間でリラックスして施術をお楽しみいただけます。<br
+              >ご来店の際には、季節に合わせたハーブティーをご提供いたしますので、心地よいひとときをお過ごしください。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- access セクション -->
     <section class="access l-access">
       <div class="access__inner inner">
